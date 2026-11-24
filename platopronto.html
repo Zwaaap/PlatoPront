@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="PlatoPronto: a karinderya food delivery website. Home-style Filipino dishes, cooked fresh and delivered hot.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PlatoPronto: Real Food, Real Fast</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#home"><img class="logo" src="images/logo.png" alt="" width="30" height="47"><span>PlatoPronto<small>Real Food, Real Fast</small></span></a>
+  <nav aria-label="Main">
+    <a href="#home" data-p="home">Home</a><a href="#about" data-p="about">About</a><a href="#menu" data-p="menu">Menu</a><a href="#order" data-p="order">Order Now<span class="cart" id="cc">0</span></a><a href="#contact" data-p="contact">Contact</a>
+  </nav>
+</header>
+<div class="bunting" aria-hidden="true"></div>
+<main>
+
+
+<section class="page" id="home">
+  <div class="hero">
+    <div>
+      <span class="badge">Lutong bahay, bukas na!</span>
+      <h1>Home-cooked meals, delivered hot</h1>
+      <p>Your neighborhood karinderya, now at your door. Home-style dishes cooked fresh and delivered while they’re hot.</p>
+      <a class="btn" href="#order">Order Now</a> <a class="btn alt" href="#menu">See the menu</a>
+    </div>
+    <div class="herowrap"><img class="mascot" src="images/logo.png" alt="PlatoPronto delivery rider carrying a bowl of hot food" width="260" height="404"><span class="sticker">Hot &amp; fresh!</span></div>
+  </div>
+  <div class="sec"><div class="row"><h2 class="chalk">Ulam ngayon: best sellers</h2><a href="#menu">More dishes</a></div><div class="grid" id="best"></div></div>
+</section>
+
+
+<section class="page" id="about">
+  <h2>About PlatoPronto</h2>
+  <div class="cols">
+    <div class="panel"><div class="pic"><img src="images/about-cook.jpg" alt="A cook preparing food in a kitchen" onerror="this.remove()">👩‍🍳</div><h3>Who we are</h3><p>PlatoPronto is a karinderya delivery site. We bring the dishes people already love in the neighborhood to their homes, schools, and offices.</p></div>
+    <div class="panel"><div class="pic"><img src="images/about-dishes.jpg" alt="Assorted Filipino dishes" onerror="this.remove()">🍛</div><h3>What we cook</h3><p>Classic ulam like adobo, sinigang, and kare-kare, plus sides and merienda, cooked fresh in small batches every day.</p></div>
+    <div class="panel"><div class="pic"><img src="images/about-delivery.jpg" alt="A rider delivering food" onerror="this.remove()">🛵</div><h3>How it works</h3><p>Pick your dishes, enter your delivery details, and place your order. Our rider brings it to your door.</p></div>
+  </div>
+</section>
+
+
+<section class="page" id="menu">
+  <h2 class="chalk">Our menu</h2>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="mgrid"></div>
+</section>
+
+
+<section class="page" id="order">
+  <h2>Order now</h2>
+  <div class="two">
+    <div class="panel"><h3>Your items</h3><div id="cart"></div><div class="total" id="tot"></div></div>
+    <div class="panel"><h3>Delivery details</h3>
+      <label for="n">Name</label><input id="n" autocomplete="name">
+      <label for="l">Delivery address</label><input id="l" autocomplete="street-address">
+      <label for="ph">Mobile number</label><input id="ph" inputmode="tel" autocomplete="tel">
+      <label for="nt">Notes for the rider (optional)</label><textarea id="nt" rows="2"></textarea>
+      <p style="margin-top:1rem"><button class="btn" id="place" type="button">Place order</button></p>
+      <div class="ok" id="ok" role="status"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="page" id="contact">
+  <h2>Contact us</h2>
+  <div class="two">
+    <div class="panel"><h3>Questions about an order?</h3><p>Message us and we’ll reply as soon as we can.</p>
+      <p>📞 0900 000 0000<br>📍 Alangilan, Batangas City<br>✉️ hello@platopronto.example<br>🕘 Daily, 7:00 AM to 8:00 PM</p></div>
+    <div class="panel"><h3>Send us a message</h3>
+      <label for="cn">Name</label><input id="cn">
+      <label for="ce">Email</label><input id="ce" type="email">
+      <label for="cm">Message</label><textarea id="cm" rows="4"></textarea>
+      <p style="margin-top:1rem"><button class="btn" id="send" type="button">Send message</button></p>
+      <div class="ok" id="ok2" role="status">Message sent. We’ll get back to you soon.</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="page" id="credits">
+  <h2 class="chalk">Photo credits</h2>
+  <div class="panel"><p>Food photos are from the websites listed here. Each link opens the original photo page.</p><ul id="credits-list" class="credits"></ul></div>
+</section>
+
+
+</main>
+<footer><div class="banig" aria-hidden="true"></div><p>© 2026 PlatoPronto. Sample interface for the CC 100 final project. <a href="#credits">Photo credits</a></p></footer>
+<script src="script.js"></script>
+</body>
+</html>
